@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "useDefineForClassFields": true,
+    "declaration": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "types": ["vite/client", "node", "vitest/globals"],
+
+    /* 路径别名 */
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./examples/*"],
+      "~/*": ["./packages/*"],
+      "^/*": ["./mobile/*"],
+      "#/*": ["./dist/packages/*"]
+    },
+
+    /* 模块解析策略 */
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+
+    /* 校验 */
+    "strict": true
+  },
+  "include": ["examples/**/*.ts", "examples/**/*.vue", "mobile/**/*.ts", "mobile/**/*.vue", "tests/**/*.ts", "packages/**/*.ts", "packages/**/*.vue", "typings/shims-vue.d.ts"],
+  "exclude": ["node_modules"]
+}
