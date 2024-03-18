@@ -41,11 +41,6 @@
     "ui组件",
     "vite"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "engine-strict": true,
-    "provenance": true
-  },
   "dependencies": {
     "clipboard": "^2.0.11",
     "html2canvas": "^1.4.1",
