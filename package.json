@@ -1,6 +1,6 @@
 {
   "name": "fun-craft-v",
-  "version": "0.0.0-beta1",
+  "version": "0.0.0-beta2",
   "private": false,
   "author": {
     "name": "YYhy",
@@ -25,7 +25,7 @@
     "test:unit": "vitest run",
     "test:unit:single": "vitest watch tests/unit/button.spec.ts",
     "prepare": "husky install",
-    "pre-publish": "node scripts/pre-publish.js && start cmd /k cd ./dist/packages",
+    "pre-publish": "node scripts/pre-publish.js && cd ./dist/packages",
     "pre-publish:github": "cross-env NODE_PRE=github node scripts/pre-publish.js && start cmd /k cd ./dist/packages",
     "prettier": "prettier --write '**/*.{ts,js,less,md,json,vue,cjs}'",
     "ncu": "ncu --configFileName .ncurc.json && npm i"
