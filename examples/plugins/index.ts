@@ -1,4 +1,4 @@
 import FunWidget from '~/index'
-// import '~/styles/index.less'
+import '~/styles/index.less'
 
 export default FunWidget

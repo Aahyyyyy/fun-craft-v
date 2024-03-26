@@ -1,4 +1,6 @@
 # 目录
+packages/
+examples/
 *.git/
 *.husky/
 dist/

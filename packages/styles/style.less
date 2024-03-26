@@ -16,19 +16,19 @@ each(@modes, {
 });
 
 // 清理
-.me-clear-ft:after {
+.fun-clear-ft:after {
   content: '';
   display: block;
   clear: both;
 }
 
-.me-clear-mg {
+.fun-clear-mg {
   content: '';
   display: table;
 }
 
 // 自定义滚动条
-.me-clear-scroll {
+.fun-clear-scroll {
   overflow-x: hidden;
   overflow-y: auto;
   &::-webkit-scrollbar {
@@ -41,22 +41,22 @@ each(@modes, {
 }
 
 // 英文或数字强制换行
-.me-wrap-en {
+.fun-wrap-en {
   word-wrap: break-word;
 }
 
 // 行内块居中
-.me-inline-block {
+.fun-inline-block {
   display: inline-block;
   vertical-align: middle;
 }
 
 // 浮动
-.me-lf {
+.fun-lf {
   float: left;
 }
 
-.me-rt {
+.fun-rt {
   float: right;
 }
 
@@ -81,7 +81,7 @@ each(@modes, {
 
   > ul,
   > div {
-    .me-clear-scroll;
+    .fun-clear-scroll;
     position: absolute;
     padding: 15px;
     background: #fff;
@@ -92,13 +92,13 @@ each(@modes, {
 }
 
 // 裁剪
-.me-clamp(@line: 1) when (@line = 1) {
+.fun-clamp(@line: 1) when (@line = 1) {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.me-clamp(@line) when (@line > 1) {
+.fun-clamp(@line) when (@line > 1) {
   text-overflow: -o-ellipsis-lastline;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -109,13 +109,13 @@ each(@modes, {
 }
 
 // warp
-.me-wrap {
+.fun-wrap {
   width: 90%;
   margin: 0 auto;
 }
 
 // 节流
-.me-throttle {
+.fun-throttle {
   // 节流动画
   @keyframes throttle {
     from {
@@ -217,7 +217,7 @@ each(@modes, {
   }
 }
 
-.me-animation-cursor {
+.fun-animation-cursor {
   animation: cursor 1.2s infinite;
 }
 
@@ -244,7 +244,7 @@ each(@modes, {
   }
 }
 
-.me-animation-rotate {
+.fun-animation-rotate {
   animation: rotate 0.8s linear infinite;
 }
 
